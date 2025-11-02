@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>CODM survey-form</title>
+  </head>
+  
+  <body>
+    <h1 id="title">CODM Survey-Form</h1>
+    <p class="description" id="description">Thanks to all codm gamers for participating in this survey</p>
+    <form id="survey-form">
+      
+    <label id="name-label" for="name">Your Username:</label>
+      <input id="name" type="text" placeholder="jxttired" required />
+
+    <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="example@gmail.com" required />
+
+    <label id="number-label" for="number">Game Level:</label>
+      <input id="number" type="number" placeholder="165" min="5" max="450" required />
+      
+      <label for="dropdown">What's your Rank?</label>
+        
+            <select id="dropdown">
+              <option>Select-One</option>
+              <option>Rookie(I-V)</option>
+              <option>Veteran(I-V)</option>
+              <option>Elite(I-V)</option>
+              <option>Pro(I-V)</option>
+             <option>Master(I-V)</option>
+              <option>Grandmaster</option>
+              <option>Legendary</option>
+            </select> 
+     
+      <p>Do you Enjoy CODM?</p>
+      
+    <div class="inline">
+      <input type="radio" name="enjoy_CODM" value="Yes" id="yes" />
+      <label for="yes">Yes</label>
+    </div>
+    
+    <div class="inline">
+      <input type="radio" name="enjoy_CODM" value="No" id="no" />
+      <label for="no">No</label>
+    </div>  
+      
+    <fieldset>
+<legend>What is your fav. weapon category?</legend>
+    
+    <div class="inline">
+        <input type="checkbox" value="Assault_Rifles" name="weapon_category" id="ar" />
+        <label for="ar">Assault Rifles</label>
+    </div>
+    
+    <div class="inline">
+        <input type="checkbox" value="Sniper_Rifles" name="weapon_category" id="sr" />
+        <label for="sr">Sniper Rifles</label>
+    </div>
+    
+    <div class="inline">
+        <input type="checkbox" value="LMGs" name="weapon_category" id="lmg" />
+        <label for="lmg">LMGs</label>
+    </div>
+    
+    <div class="inline">
+        <input type="checkbox" value="SMGs" name="weapon_category" id="smg" />
+        <label for="smg">SMGs</label>
+    </div>
+    
+    <div class="inline">
+        <input type="checkbox" value="Pistols" name="weapon_category" id="pistol" />
+        <label for="pistol">Pistols</label>
+    </div>
+    
+    <div class="inline">
+        <input type="checkbox" value="Shotguns" name="weapon_category" id="shotgun" />
+        <label for="shotgun">Shotguns</label>
+    </div>
+    
+    </fieldset>
+    
+      <label for="comments">What update does the game need?</label> 
+         <textarea name="comments" rows="5" cols="30"></textarea>
+         
+         <br />
+      <button id="submit"  type="submit">Submit</button>
+      
+            </form>
+            </body> 
+        </html>
